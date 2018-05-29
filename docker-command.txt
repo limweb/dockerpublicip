@@ -1,5 +1,6 @@
 
-
-docker build -t serv/publicip .
-docker run --name pubip -d serv/publicip
-docker exec -it pubip /bin/sh
+git clone https://github.com/limweb/dockerpublicip.git &&
+cd dockerpublicip  &&
+docker build -t serv/publicip .  &&
+docker run --name pubip -d serv/publicip  &&
+docker exec -it pubip /bin/sh  
