@@ -9,5 +9,5 @@ ADD  temp/ip.txt  /temp/ip.txt
 ADD  temp/ipnotify.php /temp/ipnotify.php
 
 ADD  root /etc/crontabs
-CMD  chmod a+x /etc/periodic/everymin/phpcron 
+CMD  sudo chmod a+x /etc/periodic/everymin/phpcron 
 CMD  crond -f
