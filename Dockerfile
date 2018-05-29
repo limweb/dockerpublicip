@@ -1,10 +1,10 @@
 
 FROM zaherg/php-7.2-xdebug-alpine
 
-CMD  mkdir /etc/periodic/everymin
+CMD  sudo mkdir /etc/periodic/everymin
 ADD  everymin/phpcron /etc/periodic/everymin/phpcron
 
-CMD  mkdir /temp
+CMD  sudo mkdir /temp
 ADD  temp/ip.txt  /temp/ip.txt
 ADD  ipnotify.php /temp/ipnotify.php
 
