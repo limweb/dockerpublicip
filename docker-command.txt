@@ -2,3 +2,4 @@
 
 docker build -t serv/publicip .
 docker run --name pubip -d serv/publicip
+docker exec -it pubip /bin/sh
